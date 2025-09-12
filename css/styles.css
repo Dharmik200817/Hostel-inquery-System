@@ -1,0 +1,94 @@
+/* Base / Desktop styles for CampusStay hostel site */
+:root{
+  --bg:#f7fafc;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#0ea5a4; /* teal */
+  --accent-2:#2563eb; /* blue */
+  --radius:12px;
+  --container:1100px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  margin:0;
+  background:var(--bg);
+  color:#0f172a;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:var(--container);margin:0 auto;padding:2rem}
+
+/* Header */
+.site-header{background:linear-gradient(90deg, rgba(255,255,255,0.85), rgba(255,255,255,0.6));backdrop-filter: blur(6px);box-shadow:0 2px 6px rgba(2,6,23,0.06);position:sticky;top:0;z-index:40}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.75rem}
+.logo{width:48px;height:48px;border-radius:10px;object-fit:cover}
+.brand-text h1{margin:0;font-size:1.125rem}
+.brand-text small{color:var(--muted);display:block}
+
+.site-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.site-nav a{color:var(--muted);text-decoration:none;padding:.5rem .75rem;border-radius:8px}
+.site-nav a:hover{background:rgba(37,99,235,0.06);color:var(--accent-2)}
+
+.header-actions{display:flex;align-items:center;gap:.5rem}
+.hamburger{display:none;background:transparent;border:0;font-size:1.25rem}
+
+/* Buttons */
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:10px;text-decoration:none;font-weight:600}
+.btn-primary{background:var(--accent-2);color:white;border:none;box-shadow:0 6px 18px rgba(37,99,235,0.12)}
+.btn-outline{background:transparent;border:1px solid rgba(2,6,23,0.06);color:var(--accent-2)}
+.btn-small{padding:.45rem .7rem;font-size:.95rem}
+
+/* Hero */
+.hero{background-image:linear-gradient(180deg, rgba(14,165,164,0.06), rgba(37,99,235,0.02)), url('https://via.placeholder.com/1400x600?text=Hostel+Banner');background-size:cover;background-position:center;border-radius:16px;margin:2rem auto;padding:3rem}
+.hero-inner{display:flex;align-items:center;gap:2rem}
+.hero-copy{flex:1;background:transparent}
+.hero-copy h2{font-size:2rem;margin:.25rem 0}
+.hero-copy p.lead{color:var(--muted)}
+.hero-ctas{margin-top:1rem;display:flex;gap:.75rem}
+.hero-image{width:360px;height:220px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 10px 30px rgba(2,6,23,0.12)}
+
+/* Sections */
+h3{margin-top:0}
+.lead{color:var(--muted);font-size:1rem}
+
+/* Grid utilities */
+.grid{display:grid;gap:1rem}
+.rooms-grid{grid-template-columns:repeat(4,1fr)}
+.gallery-grid{grid-template-columns:repeat(3,1fr)}
+.testimonials-grid{grid-template-columns:repeat(3,1fr)}
+.inquiry-grid{grid-template-columns:1fr 420px}
+
+.card{background:var(--card);padding:1.25rem;border-radius:var(--radius);box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+.room-card h4{margin:.25rem 0}
+.price{color:var(--accent-2)}
+.features{color:var(--muted);margin:0;padding-left:1rem}
+
+.fac-list{grid-template-columns:repeat(3,1fr);list-style:none;padding:0}
+.fac-list li{background:var(--card);padding:.75rem;border-radius:10px;text-align:left}
+
+.gallery-grid img{width:100%;height:auto;border-radius:10px;object-fit:cover;display:block}
+
+.inquiry-form label{display:block;margin-bottom:.75rem;color:var(--muted)}
+.inquiry-form input,.inquiry-form select,.inquiry-form textarea{width:100%;padding:.6rem;border-radius:8px;border:1px solid #e6e9ef;background:#fff}
+.form-actions{display:flex;gap:.5rem;justify-content:flex-end;margin-top:.5rem}
+
+.testimonial blockquote{font-style:italic;margin:0 0 .5rem;color:var(--muted)}
+
+.faq-list details{background:var(--card);padding:1rem;border-radius:10px;margin-bottom:.5rem}
+
+/* Footer */
+.site-footer{margin-top:2rem;background:transparent;padding:2rem 0}
+.footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+
+/* small utility */
+.muted{color:var(--muted)}
+
+/* Responsive tweaks for smaller desktops */
+@media (max-width:1100px){
+  .rooms-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+}

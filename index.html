@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CampusStay Hostel</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://via.placeholder.com/48x48.png?text=CS" alt="CampusStay logo" class="logo">
+        <div class="brand-text">
+          <h1>CampusStay</h1>
+          <small>Safe, affordable student living</small>
+        </div>
+      </div>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#inquiry">Inquiry</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline" href="#inquiry">Book Now</a>
+        <button class="hamburger" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h2>Your home away from home</h2>
+          <p>Comfortable, secure and community-driven student accommodation close to campus.</p>
+          <div class="hero-ctas">
+            <a href="#inquiry" class="btn btn-primary">Reserve a Room</a>
+            <a href="#rooms" class="btn btn-outline">View Rooms</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h3>About Us</h3>
+      <p class="lead">CampusStay is a student-first hostel offering affordable shared and private rooms with modern amenities. Our mission is to provide a safe, friendly and focused environment for study and living. Located 10 minutes from the main campus and public transport.</p>
+    </section>
+
+    <section id="rooms" class="rooms container">
+      <h3>Rooms</h3>
+      <div class="grid rooms-grid">
+        <article class="card room-card">
+          <h4>Dorms (6-bed)</h4>
+          <p class="price">From <strong>₹4,500/mo</strong></p>
+          <ul class="features">
+            <li>Shared bathroom</li>
+            <li>Wi‑Fi included</li>
+            <li>Lockers</li>
+          </ul>
+          <a class="btn btn-small" href="#inquiry">Book Dorm</a>
+        </article>
+
+        <article class="card room-card">
+          <h4>Single Room</h4>
+          <p class="price">From <strong>₹8,000/mo</strong></p>
+          <ul class="features">
+            <li>Private bed & study</li>
+            <li>Shared kitchen</li>
+            <li>Housekeeping</li>
+          </ul>
+          <a class="btn btn-small" href="#inquiry">Book Single</a>
+        </article>
+
+        <article class="card room-card">
+          <h4>Double Room</h4>
+          <p class="price">From <strong>₹6,500/mo</strong></p>
+          <ul class="features">
+            <li>Two beds</li>
+            <li>Shared bathroom</li>
+            <li>Study area</li>
+          </ul>
+          <a class="btn btn-small" href="#inquiry">Book Double</a>
+        </article>
+
+        <article class="card room-card">
+          <h4>AC / Non-AC Options</h4>
+          <p class="price">From <strong>₹7,500/mo</strong></p>
+          <ul class="features">
+            <li>AC available</li>
+            <li>24/7 Security</li>
+            <li>Laundry service</li>
+          </ul>
+          <a class="btn btn-small" href="#inquiry">Choose Options</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="facilities" class="facilities container">
+      <h3>Facilities</h3>
+      <ul class="fac-list grid">
+        <li>📶 Wi‑Fi</li>
+        <li>🍽️ Mess / Canteen</li>
+        <li>🧺 Laundry</li>
+        <li>🍳 Shared Kitchen</li>
+        <li>🅿️ Parking</li>
+        <li>📚 Study Area</li>
+        <li>🔒 Lockers</li>
+        <li>🏋️ Gym</li>
+        <li>🛡️ 24/7 Security</li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="gallery container">
+      <h3>Gallery</h3>
+      <div class="grid gallery-grid">
+        <img src="https://via.placeholder.com/400x300?text=Room+1" alt="Room 1"/>
+        <img src="https://via.placeholder.com/400x300?text=Common+Area" alt="Common area"/>
+        <img src="https://via.placeholder.com/400x300?text=Mess" alt="Mess"/>
+        <img src="https://via.placeholder.com/400x300?text=Study+Area" alt="Study area"/>
+        <img src="https://via.placeholder.com/400x300?text=Event" alt="Event"/>
+        <img src="https://via.placeholder.com/400x300?text=Locker" alt="Locker"/>
+      </div>
+    </section>
+
+    <section id="inquiry" class="inquiry container">
+      <h3>Inquiry & Booking</h3>
+      <div class="inquiry-grid grid">
+        <div class="inquiry-features card">
+          <h4>What we offer</h4>
+          <ul>
+            <li>Accommodation options: Dorms, Single, Double, AC/Non-AC</li>
+            <li>Facilities: Wi‑Fi, mess, laundry, kitchen, gym, study area</li>
+            <li>Booking form below — quick response</li>
+            <li>Location & map: 10 mins to campus (map placeholder)</li>
+            <li>House rules, activities/events, testimonials, FAQ included</li>
+          </ul>
+        </div>
+
+        <form class="card inquiry-form" action="#" method="post">
+          <label>Name
+            <input type="text" name="name" required placeholder="Your full name">
+          </label>
+
+          <label>Email or Phone
+            <input type="text" name="contact" required placeholder="Email or phone number">
+          </label>
+
+          <label>Room type
+            <select name="room_type">
+              <option>Choose a room</option>
+              <option>Dorm</option>
+              <option>Single</option>
+              <option>Double</option>
+              <option>AC</option>
+            </select>
+          </label>
+
+          <label>Move-in date
+            <input type="date" name="move_in">
+          </label>
+
+          <label>Message
+            <textarea name="message" rows="4" placeholder="Any questions or preferences"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send Inquiry</button>
+            <button class="btn btn-outline" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials container">
+      <h3>Testimonials</h3>
+      <div class="grid testimonials-grid">
+        <figure class="card testimonial">
+          <blockquote>"Great place to focus on studies. Friendly staff and clean rooms."</blockquote>
+          <figcaption>— Asha, 2nd year</figcaption>
+        </figure>
+
+        <figure class="card testimonial">
+          <blockquote>"Easy commute, reliable Wi‑Fi and excellent canteen food."</blockquote>
+          <figcaption>— Rohit, 1st year</figcaption>
+        </figure>
+
+        <figure class="card testimonial">
+          <blockquote>"Good security and supportive roommates — feels safe."</blockquote>
+          <figcaption>— Maria, exchange student</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="faq" class="faq container">
+      <h3>FAQ</h3>
+      <div class="faq-list">
+        <details>
+          <summary>Do you provide meals?</summary>
+          <p>Yes, we have a mess/canteen with affordable meal plans. Guests can opt-in.</p>
+        </details>
+
+        <details>
+          <summary>Is Wi‑Fi available?</summary>
+          <p>High-speed Wi‑Fi is available throughout the property at no extra charge.</p>
+        </details>
+
+        <details>
+          <summary>How is safety handled?</summary>
+          <p>24/7 security, CCTV in common areas, and authorized access only.</p>
+        </details>
+
+        <details>
+          <summary>What are check-in/out timings?</summary>
+          <p>Check-in is flexible; generally daytime hours for move-ins. Contact us for specifics.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Contact</h4>
+        <p>CampusStay Hostel<br>12 College Road, Cityville</p>
+        <p>Phone: <a href="tel:+911234567890">+91 12345 67890</a><br>
+        Email: <a href="mailto:hello@campusstay.example">hello@campusstay.example</a><br>
+        WhatsApp: <a href="https://wa.me/911234567890" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+      </div>
+
+      <div>
+        <h4>Follow Us</h4>
+        <p><a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">X</a></p>
+      </div>
+
+      <div>
+        <h4>Copyright</h4>
+        <p>© <span id="year">2025</span> CampusStay. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Small behavior: toggle nav on mobile hamburger
+    document.addEventListener('DOMContentLoaded', function(){
+      var btn = document.querySelector('.hamburger');
+      var nav = document.querySelector('.site-nav');
+      if(!btn || !nav) return;
+      btn.addEventListener('click', function(){
+        nav.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>
