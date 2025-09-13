@@ -448,6 +448,146 @@ section h3 {
   margin-top: 2rem;
 }
 
+/* Contact Methods Mobile */
+.contact-methods {
+  padding: 1.5rem;
+  order: 1;
+}
+
+.contact-intro {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
+
+.contact-options {
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-option {
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  gap: 1rem;
+  border-radius: 1rem;
+  transition: all 0.2s ease;
+}
+
+.contact-option:hover {
+  transform: translateY(-2px);
+}
+
+.contact-option:active {
+  transform: scale(0.98);
+}
+
+.contact-icon {
+  align-self: center;
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+}
+
+.contact-details {
+  width: 100%;
+}
+
+.contact-details h5 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.contact-details p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.contact-actions {
+  align-items: center;
+  width: 100%;
+  gap: 0.75rem;
+}
+
+.contact-btn {
+  width: 100%;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+}
+
+.contact-info {
+  font-size: 0.875rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.booking-process {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.booking-process h5 {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.process-steps li {
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.step-number {
+  align-self: center;
+  margin-bottom: 0.5rem;
+  width: 36px;
+  height: 36px;
+  font-size: 0.9rem;
+}
+
+.step-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.booking-benefits {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.booking-benefits h5 {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.benefits-list li {
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.benefits-list .fas {
+  font-size: 0.9rem;
+  width: 16px;
+  flex-shrink: 0;
+}
+
 /* Enhanced mobile form */
 .inquiry-form {
   padding: 1.5rem;
