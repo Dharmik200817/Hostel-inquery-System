@@ -155,7 +155,6 @@
               <li><i class="fas fa-tshirt"></i> Laundry service</li>
               <li><i class="fas fa-concierge-bell"></i> Room service</li>
             </ul>
-            <a class="btn btn-small btn-primary" href="#inquiry">Choose Options</a>
           </div>
         </article>
       </div>
@@ -360,9 +359,6 @@
             <span>Total Cost:</span>
             <span id="grand-total">₹4,500</span>
           </div>
-          <button class="btn btn-primary" onclick="proceedToBooking()">
-            <i class="fas fa-arrow-right"></i> Proceed to Booking
-          </button>
         </div>
       </div>
     </section>
@@ -967,27 +963,6 @@
         observer.observe(section);
       });
     });
-
-    // Proceed to booking function for pricing calculator
-    function proceedToBooking() {
-      const roomType = document.getElementById('room-type');
-      const duration = document.getElementById('duration');
-      
-      // Scroll to booking form
-      document.getElementById('inquiry').scrollIntoView({ behavior: 'smooth' });
-      
-      // Pre-fill the room type in booking form
-      setTimeout(() => {
-        const bookingRoomSelect = document.getElementById('room-preference');
-        if (bookingRoomSelect && roomType) {
-          const roomValue = roomType.value;
-          if (roomValue === '4500') bookingRoomSelect.value = 'dorm';
-          else if (roomValue === '6500') bookingRoomSelect.value = 'double';
-          else if (roomValue === '7500') bookingRoomSelect.value = 'ac';
-          else if (roomValue === '8000') bookingRoomSelect.value = 'single';
-        }
-      }, 500);
-    }
 
     // Add loading states for buttons
     document.addEventListener('click', function(e) {
