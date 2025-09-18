@@ -87,8 +87,8 @@ body {
 
 .site-nav a:hover,
 .site-nav a:active {
-  background: rgba(255, 215, 0, 0.1);
-  color: var(--primary);
+  background: var(--accent-light);
+  color: var(--accent-2);
   transform: translateX(4px);
 }
 
@@ -305,10 +305,6 @@ section h3 {
 }
 
 /* Mobile facility cards */
-.facilities {
-  text-align: center;
-}
-
 .facility-card {
   padding: 2rem 1.5rem;
   text-align: center;
@@ -367,10 +363,6 @@ section h3 {
 }
 
 /* Mobile pricing calculator */
-.pricing {
-  text-align: center;
-}
-
 .pricing-calculator {
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -378,7 +370,8 @@ section h3 {
 }
 
 .calculator-result {
-  margin-top: 1rem;
+  order: -1;
+  margin-bottom: 1rem;
 }
 
 .calc-input {
@@ -389,8 +382,8 @@ section h3 {
 }
 
 .calc-input:focus {
-  border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2);
+  border-color: var(--accent-2);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
 .checkbox-group {
@@ -633,8 +626,8 @@ section h3 {
 .inquiry-form input:focus,
 .inquiry-form select:focus,
 .inquiry-form textarea:focus {
-  border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2);
+  border-color: var(--accent-2);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
   outline: none;
 }
 
@@ -653,8 +646,8 @@ section h3 {
 }
 
 .checkbox-group .checkbox-label:hover {
-  border-color: var(--primary);
-  background: rgba(255, 215, 0, 0.1);
+  border-color: var(--accent-2);
+  background: var(--accent-light);
 }
 
 .checkbox-group input[type="checkbox"] {
